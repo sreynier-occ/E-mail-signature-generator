@@ -1,4 +1,7 @@
 
+
+
+
 var btncopy = document.querySelector('.js-copy');
 if(btncopy) {
     btncopy.addEventListener('click', docopy);
@@ -42,9 +45,7 @@ function docopy() {
 
 (function ($) {
     "use strict";
-	
-	
-	
+		$('.inputname').text(atob("U2ViYXN0aWVuIFJFWU5JRVI="));	
 		$('.fielddt').keyup(function () {			
 				$('.inputdt').text($(this).val());
 			
@@ -65,7 +66,7 @@ function docopy() {
 	
 		$('.fieldname').keyup(function () {		
 			if($(this).val() == ""){
-				$('.inputname').text("Sébastien REYNIER");
+				$('.inputname').text(atob("U2ViYXN0aWVuIFJFWU5JRVI="));
 			}else{
 				$('.inputname').text($(this).val());
 			}	
